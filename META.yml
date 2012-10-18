@@ -19,6 +19,7 @@ module_name: MooseX::RoleQR
 name: MooseX-RoleQR
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt
@@ -26,10 +27,11 @@ requires:
   Moose: 2.00
   Scalar::Does: 0.002
   namespace::sweep: 0
-  perl: 5.10.0
+  perl: 5.8.0
+  thanks: 0
 resources:
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=MooseX-RoleQR
   homepage: https://metacpan.org/release/MooseX-RoleQR
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-moosex-roleqr
-version: 0.001
+version: 0.002

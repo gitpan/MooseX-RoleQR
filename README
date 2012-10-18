@@ -6,7 +6,7 @@ SYNOPSIS
           package Local::Role;
           use MooseX::RoleQR;
           after qr{^gr} => sub {
-             print "World\n";
+             print " World\n";
           };
        }
    
