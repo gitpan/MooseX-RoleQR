@@ -35,22 +35,22 @@ DESCRIPTION
     Moose roles. It does so by deferring the calculation of which methods to
     modify until role application time.
 
-    The current implementation handles only "before", "after" and "around"
-    modifiers (not "override"), and thus it overrides the following standard
+    The current implementation handles only `before`, `after` and `around`
+    modifiers (not `override`), and thus it overrides the following standard
     Moose::Role keywords:
 
-    "before Str|ArrayRef|RegexpRef => CodeRef"
-    "after Str|ArrayRef|RegexpRef => CodeRef"
-    "around Str|ArrayRef|RegexpRef => CodeRef"
+    `before Str|ArrayRef|RegexpRef => CodeRef`
+    `after Str|ArrayRef|RegexpRef => CodeRef`
+    `around Str|ArrayRef|RegexpRef => CodeRef`
 
   Caveat Regarding the Order of Method Modifiers
     Moose executes method modifiers in a well-defined order (see
-    Moose::Manual::MethodModifiers for details). This module has the
-    potential to disrupt that order, as regular expression matched modifiers
-    are always applied after the role's other modifiers have been applied.
+    Moose::Manual::MethodModifiers for details). This module has the potential
+    to disrupt that order, as regular expression matched modifiers are always
+    applied after the role's other modifiers have been applied.
 
-  Caveat: no "use Moose::Role"
-    You should "use MooseX::RoleQR" *instead of* Moose::Role; not *as well
+  Caveat: no `use Moose::Role`
+    You should `use MooseX::RoleQR` *instead of* Moose::Role; not *as well
     as*.
 
   General Caveat
@@ -70,8 +70,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2012 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
